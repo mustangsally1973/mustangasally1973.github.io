@@ -1,2 +1,2 @@
-# mustangasally1973.github.io
+# mustangsally1973.github.io
 web pages

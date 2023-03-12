@@ -1,3 +1,55 @@
 <html>
-mustangsally1973
+  <head>
+    <meta charset=”utf-8″>
+    <title>study record</title>
+    <link rel="stylesheet" href="css/web-grid.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="data/study_record.js"></script>
+  </head>
+
+  <body>
+    <div class="r">
+      <div class="c-12">
+        <h2><span id="this_week"></span> <br></h2>
+        今週の塾の勉強時間:<span id="this_week_total"></span>分<br>
+        目標まであと<span id="this_week_remain"></span>分
+      </div>
+    </div>
+    <div class="r">
+      <div class="c-8">
+        <canvas id="daily"></canvas>
+      </div>
+      <div class="c-4">
+        <canvas id="subjects"></canvas>
+      </div>
+    </div>
+
+    <script>
+      const target_time = 600;
+      document.getElementById('this_week').innerHTML = this_week;
+      document.getElementById('this_week_total').innerHTML = this_week_total;
+      document.getElementById('this_week_remain').innerHTML = target_time - this_week_total;
+
+      const ctx_daily = document.getElementById('daily');
+      new Chart(ctx_daily, {
+        type: 'bar',
+        data: daily_data,
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          },
+        }
+     });
+
+      const ctx_subjects = document.getElementById('subjects');
+      new Chart(ctx_subjects, {
+        type: 'pie',
+        data: subject_data,
+      });
+
+</script>
+  </body>
 </html>
+

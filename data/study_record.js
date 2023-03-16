@@ -1,4 +1,4 @@
-var this_week = "2023-03-12 - 2023-03-18";
+var this_week = "2023-03-12 -- 2023-03-18";
 var this_week_total = 244;
 var daily_data = {"labels": ["2023-03-12", "2023-03-13", "2023-03-14", "2023-03-15", "2023-03-16", "2023-03-17", "2023-03-18"], "datasets": [{"label": "\u587e\u76ee\u6a19", "data": [120, 60, 60, 90, 60, 120, 120], "borderWidth": 1}, {"label": "\u587e", "data": [59, 75, 35, 75, 0, 0, 0], "borderWidth": 1}, {"label": "\u5b66\u6821", "data": [0, 18, 24, 30], "borderWidth": 1}]};
 var subject_data = {"labels": ["\u7b97\u6570", "\u56fd\u8a9e", "\u7406\u79d1", "\u793e\u4f1a", "\u7dcf\u5408", "\u5b66\u6821\u306e\u5bbf\u984c"], "datasets": [{"data": [121, 14, 52, 57, 0, 72], "backgroundColor": ["#3F51B5", "#D50000", "#F4511E", "#0B8043", "#8E24AA", "#616161"], "weight": 100}]};
